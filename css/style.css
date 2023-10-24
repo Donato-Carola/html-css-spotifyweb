@@ -166,11 +166,18 @@ footer {
 /*CSS MEDIA QUERY */
 
 @media all and (min-width: 576px){
- 
+  
     header > div.menu{
         display: none;
     }
-  
+   
+    header > div.menu-toogle{
+      display: block;
 
+    }
+
+    main>header{
+      width: 40%;
+    }
 
 } 
