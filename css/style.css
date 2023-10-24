@@ -1,79 +1,75 @@
 /*Reset*/
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.flex{
-    display: flex;
-    
-
+.flex {
+  display: flex;
 }
 
-i{
-    font-size: xx-large;
-    padding: 1rem 0;
-    color: white;
+i {
+  font-size: x-large;
+  padding: 1rem 0;
+  color: white;
+  
 }
 
-header{
-    
-    display: inline-block;
-    background-color: black;
-    width: 10%;
-    
-    
+header {
+  display: inline-block;
+  background-color: black;
+  width: 10%;
 }
 
-header>div{
-   
-    height: 100%;
+header > div {
+  height: 100%;
+  width: 100%;
+  padding: 0.2rem 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > div > ul {
+  list-style: none;
+}
+
+header > div > ul> li{
     width: 100%;
-    padding: 0.2rem 0.5rem;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header>div>ul{
-    list-style: none;
 }
 
 
-main{
-    width: 100vw;
-    display: flex;
-    height: calc(100vh - 70px);
+
+main {
+  width: 100vw;
+  display: flex;
+  height: calc(100vh - 70px);
 }
 
-
-main section.call{
-    
-    background-color: rgb(8, 11, 18);
-    height: 70px;
+main section.call {
+  background-color: rgb(8, 11, 18);
+  height: 70px;
 }
 
-
-main>section{
-    
-    width: 90%;
-    overflow: auto
+main > section {
+  width: 90%;
+  overflow: auto;
+  
 }
 
-main>section>div{ 
-   width: 100%;
-    background-color: brown;
-    
-    height: 2200px;
+main > section > div {
+  width: 100%;
+  background-color: brown;
+
+  height: 2200px;
 }
 
-
-footer{
-    position: fixed;
-    z-index: 2;
-    background-color: aqua;
-    height: 70px;
-    width: 100%;
+footer {
+  position: fixed;
+  z-index: 2;
+  background-color: aqua;
+  height: 70px;
+  width: 100%;
 }
