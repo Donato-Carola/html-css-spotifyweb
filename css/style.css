@@ -18,7 +18,7 @@ i {
 }
 
 header {
-  display: inline-block;
+ 
   background-color: black;
   width: 10%;
 }
@@ -54,7 +54,7 @@ main section.call {
 }
 
 main > section {
-  width: 90%;
+  width: 100%;
   overflow: auto;
   
 }
