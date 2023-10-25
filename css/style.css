@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
+}
+
 .flex {
   display: flex;
 
@@ -23,19 +29,23 @@ div>header.sidebar{
   width: 70px;
   height: calc(100vh - 90px);
   background-color: black;
-  border: 1px dashed magenta;
+ /* border: 1px dashed magenta;*/
 }
 
 
-
+.flex-first-menu{
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+   align-items: center;
+}
 
 div>header.sidebar>section.sezione-header-nav{
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+ 
+ 
+  
 }
 
 
@@ -50,15 +60,17 @@ div>header.sidebar ul>li{
 }
 
 ul>li>img#icon{
- color:white;
+filter: invert(1);
  
 }
 
 div>header.sidebar ul>li>img{
   height: 100%;
   width: 50%;
-  
-  
+}
+
+div>header.sidebar>section.menu-ghost{
+  display: none;
   
 }
 
@@ -108,7 +120,19 @@ div>footer{
 
 
 @media all and (min-width: 576px){
-  div>header.sidebar{
+
+  
+
+/*CSS MENU PRINCIPale*/
+  div>header.sidebar>section.sezione-header-nav{
+    display: none;
+  }
+
+
+
+/*CSS MENU A SCOMPARSA, MENU GHOST*/ 
+
+div>header.sidebar{
     width: 200px;
     
   }
@@ -116,8 +140,51 @@ div>footer{
   div>main{
     width: calc(100% - 200px);
   }
+  div>header.sidebar>section.menu-ghost{
+    display: block;
+    
+  }
+   
+  div>header.sidebar>section.menu-ghost>ul>li{
+    color: white;
+    align-items: center;
+    padding-left: 1rem;
+   
+  }
+  div>header.sidebar>section.menu-ghost>ul>li:first-child{
+    padding-top: 0.5rem;
+    text-align: start;
+   
+  }
 
+  div>header.sidebar>section.menu-ghost>ul>li:first-child>img{
+    width: 70%;
+  }
+
+  div>header.sidebar>section.menu-ghost>ul>li.li-menu>img{
+    width: 15%;
+  }
+
+  div>header.sidebar>section.menu-ghost>ul>li.li-menu>span{
+    width: 85%;
+    text-align: start;
+  }
+ 
+
+
+
+  /*Prova con hover*/
+  div>header.sidebar>section.menu-ghost>ul:hover{
+    border-left: 3px solid green;
+    
+  }
   
+
+
+
+/*MEDIA QUERY md(MEDium)*/
+
+
 
 }
 
@@ -126,6 +193,9 @@ div>footer{
 
   
 }
+
+/*MEDIA QUERY lg(LARGE)*/
+
 
 @media all and (min-width: 992px){
   
