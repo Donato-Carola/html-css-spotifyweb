@@ -162,9 +162,13 @@ div.single-music>img{
   width: 100%;
 }
 
-div.single-music>div{
+div.single-music>div.title{
   text-align: center;
 
+}
+
+div.box-artisti>div.single-music>img{
+  border-radius: 50%;
 }
 
 
