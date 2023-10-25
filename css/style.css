@@ -6,74 +6,67 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'PT Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .flex {
   display: flex;
-
 }
 
 /*CSS DIV PRINCIPLAE*/
 
-div.wrapper{
+div.wrapper {
   flex-wrap: wrap;
 }
 
-/*CSS HEADER*/
+                                           /*CSS HEADER*/
 
-div>header.sidebar{
+div > header.sidebar {
   width: 70px;
   height: calc(100vh - 90px);
   background-color: black;
- /* border: 1px dashed magenta;*/
+  /* border: 1px dashed magenta;*/
 }
 
-
-.flex-first-menu{
-   display: flex;
+.flex-first-menu {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-   align-items: center;
+  align-items: center;
 }
 
-div>header.sidebar>section.sezione-header-nav{
+div > header.sidebar > section.sezione-header-nav {
   height: 100%;
   width: 100%;
- 
- 
-  
 }
 
+div > header.sidebar ul {
+  list-style: none;
 
-div>header.sidebar ul{
- list-style: none;
- 
- border: 1px dashed magenta;
+  border: 1px dashed magenta;
 }
 
-div>header.sidebar ul>li{
+div > header.sidebar ul > li {
   text-align: center;
 }
 
-ul>li>img#icon{
-filter: invert(1);
- 
+ul > li > img#icon {
+  filter: invert(1);
 }
 
-div>header.sidebar ul>li>img{
+div > header.sidebar ul > li > img {
   height: 100%;
   width: 50%;
 }
 
-div>header.sidebar>section.menu-ghost{
+div > header.sidebar > section.menu-ghost {
   display: none;
-  
 }
 
+                                     /*FINE CSS HEADER*/
 
 
 
@@ -83,24 +76,104 @@ div>header.sidebar>section.menu-ghost{
 
 
 /*CSS MAIN*/
-div>main{
-  background-color: blue;
+div > main {
+ 
   height: calc(100vh - 90px);
   width: calc(100% - 70px);
   overflow: auto;
 }
 
-div>main>div.call{
+div > main > div.call {
+  
+  position: relative;
   height: 70px;
   background-color: rgb(8, 11, 18);
+  
+}
+
+
+
+div > main > div.call>button{
+  position: absolute;
+  right: 10px;
+  bottom:20px;
+  padding: 0.5rem 3rem;
+  border-radius: 20px;
+  border: 1px solid white;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+
+}
+
+/*CSS HEADER DEL MAIN*/
+
+div > main> div.header-main  {
+ 
+  background-color: rgb(20, 25, 34);
+  color: white;
+}
+
+div > main> div.header-main>header>ul{
+  list-style: none;
+  color: rgb(125, 127, 132);
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  line-height: 2.5rem;
+
+}
+
+div > main> div.header-main>header>ul>li{
+  text-transform: uppercase;
+  padding: 0 1rem;
+  
+}
+
+
+/*CSS BOX MUSIC PLAYLIST*/
+
+
+
+
+div.box-music{
+  width: 90%;
+  margin: 0 auto;
+}
+
+div.musics{
+ 
+  display: flex;
+  
+  flex-wrap: wrap;
+  
+}
+
+
+div.single-music{
+  width: calc(100% / 2 );
+  padding-right: 1rem;
+  padding-bottom: 1rem;
   
   
 }
 
-div>main>div{
-  height: 1500px;
-  background-color: burlywood;
+
+div.single-music>img{
+  width: 100%;
 }
+
+div.single-music>div{
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -109,126 +182,170 @@ div>main>div{
 
 
 /*CSS FOOTER*/
-div>footer{
+div > footer {
   width: 100%;
   height: 90px;
   background-color: rgb(40, 40, 40);
 }
 
 
+
+
+
+
+
+
+
 /*MEDIA QUERY SM(SMALL)*/
 
-
-@media all and (min-width: 576px){
-
-  
-
-/*CSS MENU PRINCIPale*/
-  div>header.sidebar>section.sezione-header-nav{
+@media all and (min-width: 576px) {
+  /*MEDIA QUERY HEADER*/
+  /*CSS MENU PRINCIPale*/
+  div > header.sidebar > section.sezione-header-nav {
     display: none;
   }
 
+                                              /* HEDER*/
 
-/* HEDER*/
+  /*CSS MENU A SCOMPARSA, MENU GHOST*/
 
-/*CSS MENU A SCOMPARSA, MENU GHOST*/ 
-
-div>header.sidebar{
+  div > header.sidebar {
     width: 200px;
-    
   }
-   
-  div>main{
+
+  div > main {
     width: calc(100% - 200px);
   }
-  div>header.sidebar>section.menu-ghost{
+  div > header.sidebar > section.menu-ghost {
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
-     
-    
-    
+  }
+
+  div > header.sidebar > section.menu-ghost span {
+    padding-left: 0.5rem;
   }
 
   /*Primo UL dove c'è il logo*/
-   
-  div>header.sidebar>section.menu-ghost> div>ul{
+
+  div > header.sidebar > section.menu-ghost > div > ul {
     color: white;
   }
 
-  div>header.sidebar>section.menu-ghost>div>ul>li{
-    color: white;
+  div > header.sidebar > section.menu-ghost > div > ul > li {
+    color: grey;
     align-items: center;
     padding-left: 1rem;
     text-align: start;
-   
   }
-  div>header.sidebar>section.menu-ghost>div>ul>li:first-child{
+  div > header.sidebar > section.menu-ghost > div > ul > li:first-child {
     padding-top: 0.5rem;
     text-align: start;
-   
   }
 
-
-  div>header.sidebar>section.menu-ghost>div>ul>li:first-child>img{
+  div > header.sidebar > section.menu-ghost > div > ul > li:first-child > img {
     width: 70%;
   }
 
-
   /*Secondo UL dove ci sono i singoli loghi*/
 
-  div>header.sidebar>section.menu-ghost>div>ul>li.li-menu>img
-  {
+  div > header.sidebar > section.menu-ghost > div > ul > li.li-menu > img {
     width: 15%;
   }
 
-  div>header.sidebar>section.menu-ghost>div>ul>li.li-menu>span{
+  div > header.sidebar > section.menu-ghost > div > ul > li.li-menu > span {
     width: 85%;
     text-align: start;
   }
 
   /*Terzo UL con le playlist*/
-   
-  ul.third-ul>li:nth-child(2)>i{
+
+  ul.third-ul > li:nth-child(2) > i {
     background-color: rgb(163, 163, 163);
     padding: 0.75rem;
     color: black;
     margin-top: 0.25rem;
-    
-   
   }
 
   /*quarto UL*/
 
-
-
-
+  ul.fourth-ul > li > img {
+    background-color: grey;
+    border-radius: 50%;
+  }
 
   /*Prova con hover*/
-  div>header.sidebar>section.menu-ghost>div>ul>li:hover{
+  div > header.sidebar > section.menu-ghost > div > ul > li:hover {
     border-left: 5px solid green;
-    
+    color: white;
   }
+
+
+                                                   /*FINE MEDIA QUERY HEADER*/
+
+                                                 /*INIZIO MEDIA QUERY BOX MUSIC*/
+ 
   
 
 
 
-/*MEDIA QUERY md(MEDium)*/
 
 
 
 }
 
-@media all and (min-width: 768px){
-  
+  /*MEDIA QUERY md(MEDium)*/
 
+
+@media all and (min-width: 768px) {
+
+   /*INIZIO MEDIA QUERY BOX MUSIC*/
+
+
+div.single-music{
+  width: calc(100% / 4 );
+  padding-right: 1rem;
+  
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*MEDIA QUERY lg(LARGE)*/
 
+@media all and (min-width: 992px) {
 
-@media all and (min-width: 992px){
+  div.single-music{
+    width: calc(100% / 6 );
+    padding-right: 1rem;
+    
+    
+  }
   
 }

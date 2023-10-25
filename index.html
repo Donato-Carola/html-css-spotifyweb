@@ -9,136 +9,210 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <div class="flex wrapper">
-
       <!--HEADER-->
       <header class="sidebar">
-         
+
+        <!--MENU MOBILE-->
         <section class="sezione-header-nav flex-first-menu">
-         
-         <ul>
-          <li>
-            <img id="icon" src="img/favicon.ico" alt="icona spoty">
-            <img src="img/home.svg" alt="icona home">
-            <img src="img/search.svg" alt="">
-            <img src="img/libreria.svg" alt="">
-
-          </li>
-         </ul>
-         
-
-         
-         <ul>
-          <li>
-            <img src="img/download.svg" alt="">
-            <img src="img/profile.svg" alt="">
-          </li>
-         </ul>
-      
-
-        </section>
-         
-     <!--Menu a scomparsa -->
-
-   <!--sezione principale del menu a scomparsa andando sotto i 576px-->
-      <section class="menu-ghost ">
-
-    <!--Primo ul del menu con il logo-->
-     <div>
           <ul>
             <li>
-              <img src="img/logo.svg" alt="">
+              <img id="icon" src="img/favicon.ico" alt="icona spoty" />
+              <img src="img/home.svg" alt="icona home" />
+              <img src="img/search.svg" alt="" />
+              <img src="img/libreria.svg" alt="" />
             </li>
           </ul>
-    <!--Secondo ul con i tre loghi -->
+
           <ul>
-            <li class="flex li-menu">
-            <img src="img/home.svg" alt=""> 
-            <span>Home</span>
-          </li>
-          <li>
-            <li class="flex li-menu">
-              <img src="img/search.svg" alt=""> 
-              <span>Cerca</span>
-          </li>
-          <li>
-            <li class="flex li-menu">
-              <img src="img/libreria.svg" alt=""> 
-              <span>Libreria</span>
-          </li>
+            <li>
+              <img src="img/download.svg" alt="" />
+              <img src="img/profile.svg" alt="" />
+            </li>
           </ul>
-     <!--terzo ul con le Playlist-->
-       <ul class="third-ul">
-        <li>
-          <h3>PLAYLIST</h3>
-        </li>
-        <li class="flex">
-          <i class="fa-solid fa-plus"></i>
-        <span>Crea PLaylist</span>
+        </section>
 
-       
-      </li>  
-      <li>Nome Playlist</li>
-        <li>Nome Playlist</li>
-        <li>Nome Playlist</li>
-        <li>Nome Playlist</li>
-        <li>Nome Playlist</li>
-        <li>Nome Playlist</li>
-        <li>Nome Playlist</li>
-       </ul>
+        <!--Menu a scomparsa TABLET e DESKTOP-->
 
-       </div>
-     <!--quearto UL con installa app-->
-      <!--quarto ul-->
+        <!--sezione principale del menu a scomparsa andando sotto i 576px-->
+        <section class="menu-ghost">
+          <!--Primo ul del menu con il logo-->
+          <div>
+            <ul>
+              <li>
+                <img src="img/logo.svg" alt="" />
+              </li>
+            </ul>
+            <!--Secondo ul con i tre loghi -->
+            <ul>
+              <li class="flex li-menu">
+                <img src="img/home.svg" alt="" />
+                <span>Home</span>
+              </li>
+              <li></li>
+              <li class="flex li-menu">
+                <img src="img/search.svg" alt="" />
+                <span>Cerca</span>
+              </li>
+              <li></li>
+              <li class="flex li-menu">
+                <img src="img/libreria.svg" alt="" />
+                <span>Libreria</span>
+              </li>
+            </ul>
+            <!--terzo ul con le Playlist-->
+            <ul class="third-ul">
+              <li>
+                <h3>PLAYLIST</h3>
+              </li>
+              <li class="flex">
+                <i class="fa-solid fa-plus"></i>
+                <span>Crea PLaylist</span>
+              </li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+            </ul>
+          </div>
+          <!--quearto UL con installa app-->
+          <!--quarto ul-->
 
-     <div>
-      <ul>
-        <li class="li-menu flex">
-        <img src="img/download.svg" alt="">
-        <span>Installa App</span>
-      </li>
-      </ul>
-   
-    <hr>
-    <ul>
-     <li class="flex li-menu">
-      <img src="img/profile.svg" alt="">
-      <span>John Doe</span>
-    </li>
-    </ul> 
-  </div>
-      </section>
+          <div>
+            <ul >
+              <li class="li-menu flex">
+                <img src="img/download.svg" alt="" />
+                <span>Installa App</span>
+              </li>
+            </ul>
 
+            <hr />
+            <ul class="fourth-ul">
+              <li class="flex li-menu">
+                <img src="img/profile.svg" alt="" />
+                <span>John Doe</span>
+              </li>
+            </ul>
+          </div>
+        </section>
       </header>
 
-<!--MAIN-->
+      <!--MAIN-->
 
       <main>
-         <div class="call">
 
-         </div>
-         <div></div>
-     
+        <!--box sopra dell'overflow-->
+        <div class="call">
+           <button>EFFETTUA L'UPGRADE</button>
+        </div>
+          
+        <!--div dove ci sono le playlist-->
+        <div class="header-main">
+          <!--Header con menu di navigazione-->
+          <header>
+            <ul class="flex">
+              <li>
+               <h4>in evidenza</h4> 
+              </li>
+              <li>
+               <h4>podcast</h4> 
+              </li>
+              <li>
+               <h4>classifiche</h4> 
+              </li>
+              <li>
+                <h4>generi e mood</h4>
+              </li>
+              <li>
+               <h4>nuove uscite</h4> 
+              </li>
+              <li>
+                <h4>scopri</h4>
+              </li>
+            </ul>
 
+          </header>
+
+        <div class="box-music">
+
+          <section class="first-section ">
+               <h1>Recently played</h1>
+           
+             <div class="musics">
+                <div class="single-music">
+                  <img src="img/metal_lifting.jpg" alt="">
+                  <div class="title">
+                   <h3>Heavy Metal</h3>
+                   <h6>Subtitle</h6>
+                 </div>
+                </div>
+                <div class="single-music">
+                  <img src="img/metal_lifting.jpg" alt="">
+                  <div class="title">
+                   <h3>Heavy Metal</h3>
+                   <h6>Subtitle</h6>
+                 </div>
+                </div>
+                <div class="single-music">
+                  <img src="img/metal_lifting.jpg" alt="">
+                  <div class="title">
+                   <h3>Heavy Metal</h3>
+                   <h6>Subtitle</h6>
+                 </div>
+                </div>
+                <div class="single-music">
+                  <img src="img/metal_lifting.jpg" alt="">
+                  <div class="title">
+                   <h3>Heavy Metal</h3>
+                   <h6>Subtitle</h6>
+                 </div>
+                </div>
+                <div class="single-music">
+                  <img src="img/metal_lifting.jpg" alt="">
+                  <div class="title">
+                   <h3>Heavy Metal</h3>
+                   <h6>Subtitle</h6>
+                 </div>
+                </div>
+                <div class="single-music">
+                  <img src="img/metal_lifting.jpg" alt="">
+                  <div class="title">
+                   <h3>Heavy Metal</h3>
+                   <h6>Subtitle</h6>
+                 </div>
+                </div>
+             </div>
+          </section>
+        
+
+
+
+
+
+        </div>
+
+
+        </div>
       </main>
 
 
-<!--FOOTER-->
+
+
+
+
+
+      <!--FOOTER-->
 
       <footer></footer>
-
-
-
-
     </div>
   </body>
 </html>
