@@ -8,157 +8,38 @@
 
 .flex {
   display: flex;
-}
-
-i {
-  font-size: x-large;
-  padding: 1rem 0;
-  color: white;
-  
-}
-
-body{
-font-family: 'Montserrat', sans-serif;
-/*font-family: 'Open Sans', sans-serif;
-font-family: 'PT Sans', sans-serif;*/
-}
-
-main {
-  width: 100vw;
-  display: flex;
-  height: calc(100vh - 70px);
-}
-
-
-/*Header*/
-
-header {
-  position: fixed;
-  z-index: 2;
-  background-color: black;
-  width:50px;
-  
-  height: calc(100vh - 70px);
-}
-
-header > div.menu {
-  height: 100%;
-  width: 100%;
-  padding: 0.2rem 0.5rem;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-header > div.menu-toogle{
-  display:none ;
-}
-
-header > div > ul {
-  list-style: none;
-}
-
-header > div > ul> li{
-    width: 100%;
-}
-
-
-/*pagina in overflow*/
-
-
-main>section.overflow>section.call {
-  background-color: rgb(8, 11, 18);
-  height: 70px;
-  position: relative;
-}
-
-main section.call>button{
-    color: white;
-    border-radius: 20px;
-    padding: 0.5rem 2rem;
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    right: 0;
-    bottom: 20px;
-    border-color: white;
-
-    
-}
-
-
-
-main > section.overflow {
-  width: 100vw ;
-  overflow: auto;
- background-color: rgb(20, 25, 34);
- position: relative;
- 
-
-
-  
-}
-
-
-/*CSS DELL'HEDER DELLA SEZIONE OVERFLOW*/
-
-main>section>div.header-overflow{
-    color: white;
-     width: 100vw;
-    
-  
-}
-
-
-
-
-
-main>section>div.header-overflow>ul{
-    list-style: none;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:1rem 0;
-}
-
-main>section>div.header-overflow>ul>li{
-    color:rgb(121, 123, 128);
-    padding: 1rem 0.5rem;
-    
 
 }
 
-/*CSS DELLA STRUTTURA PRINCIPLE DELLA SEZIONE OVERFLOW*/
+div.wrapper{
+  flex-wrap: wrap;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-  position: fixed;
-  z-index: 2;
+div>header#sidebar{
+  width: 50px;
+  height: calc(100vh - 90px);
   background-color: aqua;
+}
+
+
+div>main{
+  background-color: blue;
+  height: calc(100vh - 90px);
+  width: calc(100% - 50px);
+  overflow: auto;
+}
+
+div>main>div.call{
   height: 70px;
-  width: 100vw;
+  background-color: rgb(8, 11, 18);
+  
+  
+}
+
+div>main>div{
+  height: 1500px;
+  background-color: burlywood;
 }
 
 
@@ -167,31 +48,8 @@ footer {
 
 
 
-
-
-
-
-/*CSS MEDIA QUERY */
-
-/*@media all and (min-width: 576px){
-  
-    header > div.menu{
-        display: none;
-    }
-   
-    header > div.menu-toogle{
-      display: block;
-  
-    }
-
-    main>header{
-      width: 40%;
-
-    }
-
-    main > section.overflow {
-      width: 90%;
-      overflow: auto;
-
-} 
-}*/
+div>footer{
+  width: 100%;
+  height: 90px;
+  background-color: black;
+}
