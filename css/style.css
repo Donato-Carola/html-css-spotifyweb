@@ -25,9 +25,10 @@ div.wrapper {
                                            /*CSS HEADER*/
 
 div > header.sidebar {
-  width: 70px;
+  width: 50px;
   height: calc(100vh - 90px);
   background-color: black;
+  padding-top: 0.5rem;
   /* border: 1px dashed magenta;*/
 }
 
@@ -46,7 +47,7 @@ div > header.sidebar > section.sezione-header-nav {
 div > header.sidebar ul {
   list-style: none;
 
-  border: 1px dashed magenta;
+  
 }
 
 div > header.sidebar ul > li {
@@ -61,6 +62,27 @@ div > header.sidebar ul > li > img {
   height: 100%;
   width: 50%;
 }
+
+div > header.sidebar li.flex-li-mobile{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+div > header.sidebar img.icon-download{
+  width: 35%;
+  padding-bottom: 1rem;
+}
+
+div > header.sidebar img.omino{
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: grey;
+}
+
+
 
 div > header.sidebar > section.menu-ghost {
   display: none;
@@ -77,9 +99,9 @@ div > header.sidebar > section.menu-ghost {
 
 /*CSS MAIN*/
 div > main {
- 
+  background-color: rgb(20, 25, 34);
   height: calc(100vh - 90px);
-  width: calc(100% - 70px);
+  width: calc(100% - 50px);
   overflow: auto;
 }
 
@@ -171,6 +193,9 @@ div.box-artisti>div.single-music>img{
   border-radius: 50%;
 }
 
+.padding-title{
+  padding-bottom: 1rem;
+}
 
 
 
