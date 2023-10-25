@@ -33,10 +33,11 @@ main {
 /*Header*/
 
 header {
-  display: inline-block;
+ 
   background-color: black;
   width: 10%;
   min-width: 50px;
+  height: calc(100vh - 70px);
 }
 
 header > div.menu {
@@ -46,6 +47,9 @@ header > div.menu {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+header > div.menu-toogle{
+  display:none ;
 }
 
 header > div > ul {
@@ -60,7 +64,7 @@ header > div > ul> li{
 /*pagina in overflow*/
 
 
-main section.call {
+main>section.overflow>section.call {
   background-color: rgb(8, 11, 18);
   height: 70px;
   position: relative;
@@ -85,6 +89,8 @@ main > section.overflow {
   width: 90%;
   overflow: auto;
  background-color: rgb(20, 25, 34);
+ 
+
 
   
 }
@@ -165,7 +171,7 @@ footer {
 
 /*CSS MEDIA QUERY */
 
-@media all and (min-width: 576px){
+/*@media all and (min-width: 576px){
   
     header > div.menu{
         display: none;
@@ -173,11 +179,17 @@ footer {
    
     header > div.menu-toogle{
       display: block;
-
+  
     }
 
     main>header{
       width: 40%;
+
     }
 
+    main > section.overflow {
+      width: 90%;
+      overflow: auto;
+
 } 
+}*/
