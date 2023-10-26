@@ -275,12 +275,17 @@ section.second-section-footer>div:last-child{
 }
 
 div.barretta{
- 
+  
   width: 350px;
   height: 1px;
   background-color: white;
 }
 
+section.second-section-footer>div:last-child span{
+  padding: 0 1rem ;
+  font-size: small;
+
+}
 
 
 
