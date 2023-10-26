@@ -218,22 +218,32 @@ div > footer {
   background-color: rgb(40, 40, 40);
   justify-content: space-between;
   color: white;
+  align-items: center;
   
 
  
 }
 
+
+
+/*CSS per la distanza delle icone nel footer*/
+.padding-icon{
+  padding: 0 0.5rem;
+}
+
+
 /*prima sezione del footer*/
 
-footer>section.first-section-footer,
-footer>section.first-section-footer>div{
+footer>section.first-section-footer{
   height: 100%;
 }
 
 
 footer>section.first-section-footer>div>img{
-  height: 100%;
+  height:90%;
+  
   padding: 1rem;
+  
 }
 
 footer>section.first-section-footer>div:nth-child(2),
@@ -255,6 +265,22 @@ footer>section.first-section-footer>div:nth-child(3){
 
 /*seconda sezione del footer*/
 
+section.second-section-footer>div:first-child{
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+div.barretta{
+ 
+
+  background-color: white;
+}
+
+
+
+
+
+/* terza sezione del footer*/
 
 
 
