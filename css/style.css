@@ -149,6 +149,13 @@ div > main> div.header-main>header>ul{
 div > main> div.header-main>header>ul>li{
   text-transform: uppercase;
   padding: 0 1rem;
+ 
+  
+}
+
+div > main> div.header-main>header>ul>li>h4:hover{
+  border-bottom: 1px solid lime;
+  
   
 }
 
@@ -181,16 +188,46 @@ div.single-music{
 }
 
 
-div.single-music>img{
+div.single-music>div.img-song>img{
   width: 100%;
 }
+
+div.single-music>div.img-song{
+  position: relative;
+}
+
+
+
+div.single-music>div.img-song> i{
+ display: none;
+ position: absolute;
+ top:50%;
+ left: 50%;
+ font-size: xxx-large;
+ transform: translate(-50%, -50%);
+
+ }
+
+div.single-music>div.img-song:hover i{
+display: block;
+}
+
+
+
+
+
+
+
+
+
+
 
 div.single-music>div.title{
   text-align: center;
 
 }
 
-div.box-artisti>div.single-music>img{
+div.box-artisti>div.single-music>div>img{
   border-radius: 50%;
 }
 
@@ -289,6 +326,7 @@ section.second-section-footer>div:first-child{
 
 section.second-section-footer>div:last-child{
   align-items: center;
+  width: 100%;
 }
 
 div.barretta{
@@ -300,7 +338,7 @@ div.barretta{
 }
 
 section.second-section-footer>div:last-child span{
-  padding: 0 1rem ;
+ 
   font-size: small;
 
 }
@@ -316,6 +354,7 @@ section.third-section-footer{
 
 section.third-section-footer i{
   font-size: small;
+  padding: 0.25rem;
 }
 
 div.volume{
@@ -458,7 +497,14 @@ div.single-music{
   
 }
 
+footer>section.first-section-footer>div:nth-child(3){
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+div.barretta{
+  width: 250px;
+}
 
 
 
@@ -496,4 +542,10 @@ div.single-music{
     
   }
   
+
+  div.barretta{
+    width: 450px;
+  }
+
+
 }
