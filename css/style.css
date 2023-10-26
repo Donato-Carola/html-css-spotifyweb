@@ -270,9 +270,14 @@ section.second-section-footer>div:first-child{
   padding: 0.5rem 0;
 }
 
+section.second-section-footer>div:last-child{
+  align-items: center;
+}
+
 div.barretta{
  
-
+  width: 350px;
+  height: 1px;
   background-color: white;
 }
 
