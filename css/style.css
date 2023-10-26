@@ -52,17 +52,26 @@ div > header.sidebar ul {
 
 div > header.sidebar ul > li {
   text-align: center;
+  border-left: 3px solid transparent;
+
+}
+
+div > header.sidebar ul > li:hover{
+  border-left: 3px solid lime;
 }
 
 ul > li > img#icon {
   filter: invert(1);
 }
 
+
+
 div > header.sidebar ul > li > img {
   height: 100%;
   width: 50%;
  
 }
+
 
 div > header.sidebar li.flex-li-mobile{
   display: flex;
@@ -159,6 +168,10 @@ div > main> div.header-main>header>ul>li>h4:hover{
   
 }
 
+div > main> div.header-main>header>ul>li>h4{      /*BARBA TRUCCO PER NON FAR MUOVERE GLI LI QUANDO PASSI SOPRA QUANDO HANNO IL BORDO IN HOVER ECCC...*/
+  border-bottom: 1px solid transparent;
+}
+
 
 /*CSS BOX MUSIC PLAYLIST*/
 
@@ -206,11 +219,15 @@ div.single-music>div.img-song> i{
  font-size: xxx-large;
  transform: translate(-50%, -50%);
 
+
  }
+
+ 
 
 div.single-music>div.img-song:hover i{
 display: block;
 }
+
 
 
 
@@ -464,8 +481,12 @@ div.volume{
 
   /*Prova con hover*/
   div > header.sidebar > section.menu-ghost > div > ul > li:hover {
-    border-left: 5px solid green;
+    border-left: 3px solid lime;
     color: white;
+  }
+
+  div > header.sidebar > section.menu-ghost > div > ul > li{
+    border-left: 3px solid transparent;
   }
 
 
