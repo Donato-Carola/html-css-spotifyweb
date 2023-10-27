@@ -205,6 +205,9 @@ div.single-music>div.img-song>img{
   width: 100%;
 }
 
+
+
+
 div.single-music>div.img-song{
   position: relative;
 }
@@ -228,6 +231,12 @@ div.single-music>div.img-song:hover i{
 display: block;
 }
 
+
+div.img-song>img:hover ,
+div.img-song>i:hover  {
+  transition: all ;
+  filter: sepia(90%);
+}
 
 
 
