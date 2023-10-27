@@ -98,6 +98,11 @@ div > header.sidebar > section.menu-ghost {
   display: none;
 }
 
+ul.third-ul{
+  line-height: 2rem;
+
+}
+
                                      /*FINE CSS HEADER*/
 
 
@@ -210,6 +215,10 @@ div.single-music>div.img-song>img{
 
 div.single-music>div.img-song{
   position: relative;
+}
+
+div.title-section{
+  padding-top: 2.5rem;
 }
 
 
