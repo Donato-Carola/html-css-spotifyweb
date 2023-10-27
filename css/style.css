@@ -362,9 +362,22 @@ div.barretta-due{
   height: 100%;
 }
 
-div.barretta-uno:hover div.barretta-due{
+div.track-ball{
+  display: none;
+  position: absolute;
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  left: 30%;
+  top: -5px;
+  
+}
+
+div.barretta-uno:hover div.track-ball{
   display: block;
 }
+
 
 
 section.second-section-footer>div:last-child span{
@@ -382,13 +395,13 @@ section.third-section-footer{
   align-items: center;
 }
 
-section.third-section-footer i{
+section.third-section-footer div>i{
   font-size: small;
   padding: 0.25rem;
 }
 
 div.volume-uno{
- 
+  position: relative;
   width:70px;
   height: 3px;
   background-color: white;
@@ -398,21 +411,30 @@ div.volume-uno{
 
 div.volume-due{
  
-  position: relative;
+  position: absolute;
   background-color: aqua;
-  width: 30%;
-  height: 100%;
+  top: 0;
+  width: 20px;
+  height: 3px;
 }
 
-div.volume-due>div{
-  width: 10px;
-  height: 10px;
-  background-color: black;
+
+
+div.vol-ball{
+  display: none;
   position: absolute;
-  right: 0;
- 
+  background-color: black;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
+  left: 15px;
+  top: -5px;
 }
+
+div.volume-uno:hover div.vol-ball{
+  display: block;
+}
+
 
 
 
